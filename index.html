@@ -1,216 +1,65 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÒþË½Õþ²ß - ÓÅÀÖÓÎÏ·</title>
+    <title>SDKä¿¡æ¯è¡¨</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
             line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
             color: #333;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .subsection {
-            margin-left: 20px;
-        }
-        .important {
-            font-weight: bold;
-        }
-        .contact-info {
-            margin-top: 40px;
-            font-style: italic;
-            color: #666;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            margin-top: 20px;
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 10px;
             text-align: left;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
         }
     </style>
 </head>
 <body>
-    <h1>ÒþË½Õþ²ß</h1>
-    <p>»¶Ó­ÄúÊ¹ÓÃ¸ÃÓÎÏ·£¬¸ÃÓÎÏ·ÓÉÓÅÀÖ¿ª·¢Õß£¨ÒÔÏÂ¼ò³Æ¡°ÎÒÃÇ¡±£©Ìá¹©¡£ÎÒÃÇ½«Í¨¹ý¡¶ÒþË½Õþ²ß¡·ÏòÄúËµÃ÷ÄúÔÚÊ¹ÓÃÎÒÃÇµÄÓÎÏ·Ê±£¬ÎÒÃÇºÍÎÒÃÇºÏ×÷µÄµÚÈý·½Æ½Ì¨»áÔÚ»ñµÃÄúÍ¬ÒâµÄÇé¿öÏÂÊÕ¼¯ÄúµÄ¸öÈËÐÅÏ¢¡£</p>
-    <p>ÎÒÃÇ·Ç³£ÖØÊÓÄúµÄ¸öÈËÐÅÏ¢±£»¤²¢³ä·Ö×ðÖØÄúµÄÓÃ»§È¨Àû£¬ÇëÄú×ÐÏ¸ÔÄ¶Á±¾ÒþË½Õþ²ß£¬²¢°´ÕÕ±¾ÒþË½Õþ²ßËùÊö¹ÜÀíÄúµÄ¸öÈËÐÅÏ¢ÒÔ¼°Ïà¹ØÊÚÈ¨¡£±¾ÒþË½Õþ²ß¾ßÓÐ·¨ÂÉÐ§Á¦¡£</p>
-
-    <!-- Ä¿Â¼ -->
-    <div class="section">
-        <h2>Ä¿Â¼</h2>
-        <ul>
-            <li><a href="#collection">Ò»¡¢ÈçºÎÊÕ¼¯ºÍÊ¹ÓÃÄúµÄ¸öÈËÐÅÏ¢</a></li>
-            <li><a href="#cookie">¶þ¡¢ÈçºÎÊ¹ÓÃCookie»òÍ¬Àà¼¼Êõ</a></li>
-            <li><a href="#sharing">Èý¡¢ÈçºÎ¹²Ïí¡¢×ªÈÃ¡¢ÅûÂ¶ÄúµÄ¸öÈËÐÅÏ¢</a></li>
-            <li><a href="#storage">ËÄ¡¢ÈçºÎ´æ´¢ÄúµÄ¸öÈËÐÅÏ¢</a></li>
-            <li><a href="#protection">Îå¡¢ÈçºÎ±£»¤ÄúµÄ¸öÈËÐÅÏ¢</a></li>
-            <li><a href="#management">Áù¡¢ÈçºÎ¹ÜÀíÄúµÄ¸öÈËÐÅÏ¢</a></li>
-            <li><a href="#minor">Æß¡¢Î´³ÉÄêÈËÊ¹ÓÃÌõ¿î</a></li>
-            <li><a href="#revision">°Ë¡¢ÒþË½Õþ²ßµÄÐÞ¶©ºÍÍ¨Öª</a></li>
-            <li><a href="#contact">¾Å¡¢ÈçºÎÁªÏµÎÒÃÇ</a></li>
-        </ul>
-    </div>
-
-    <!-- ÈçºÎÊÕ¼¯ºÍÊ¹ÓÃÄúµÄ¸öÈËÐÅÏ¢ -->
-    <div class="section">
-        <h2 id="collection">Ò»¡¢ÈçºÎÊÕ¼¯ºÍÊ¹ÓÃÄúµÄ¸öÈËÐÅÏ¢</h2>
-        <div class="subsection">
-            <p><strong>1.1 ÄúÖ÷¶¯Ìá¹©µÄÐÅÏ¢</strong></p>
-            <p>ÄúÊ¹ÓÃÎÒÃÇµÄÓÎÏ··þÎñÊ±£¬¿ÉÒÔÑ¡Ôñ×¢²áÕËºÅ²¢µÇÂ¼»òÕßÖ±½Ó½øÈëÓÎÏ·¡£µ±Äú×¢²áÕËºÅÊ±£¬Äú¿ÉÒÔÍ¨¹ýQQ¡¢Î¢ÐÅ»òÆäËûµÚÈý·½Æ½Ì¨ÕËºÅ´´½¨ÓÎÏ·ÕË»§£¬²¢µÇÂ¼ÎÒÃÇµÄÓÎÏ·£¬½ìÊ±Äú½«ÏòÎÒÃÇÌá¹©ÄúµÄµÚÈý·½Æ½Ì¨ÕË»§Í·Ïñ¡¢êÇ³ÆÐÅÏ¢£»µ±ÄúÖ±½Ó½øÈëÓÎÏ·Ê±£¬ÊÇÒÔÓÎ¿ÍµÄÉí·Ý¿ìËÙ½øÈëÓÎÏ·¡£</p>
-        </div>
-        <div class="subsection">
-            <p><strong>1.2 ÎÒÃÇ»òÎÒÃÇºÏ×÷µÄµÚÈý·½Æ½Ì¨ÊÕ¼¯ºÍÊ¹ÓÃµÄÐÅÏ¢¼°»ñÈ¡µÄÈ¨ÏÞ</strong></p>
-            <p>ÎªÁË¸øÄúÌá¹©¸üºÃµÄ²úÆ·»ò·þÎñ£¬ÎÒÃÇÔÚÓÎÏ·ÄÚ½ÓÈëÁËµÚÈý·½·þÎñ£¨°üÀ¨µ«²»ÏÞÓÚÊµÃûÈÏÖ¤¡¢Êý¾Ý·ÖÎö¡¢µÚÈý·½Ö§¸¶¡¢Í¶·Å¹ã¸æ£©£¬µ±ÄúÊ¹ÓÃÎÒÃÇµÄ²úÆ·»ò·þÎñÊ±£¬ÎªÁËÈ·±£ÄúÄÜÕý³£Ê¹ÓÃÓÎÏ·£¬ÎÒÃÇºÍÎÒÃÇºÏ×÷µÄµÚÈý·½Æ½Ì¨¿ÉÄÜÔÚÓÎÏ·°²×°ºÍÊ¹ÓÃ¹ý³ÌÖÐÍ¨¹ýµ÷ÓÃÉè±¸È¨ÏÞÊÕ¼¯²¿·ÖÉè±¸Ïà¹ØÐÅÏ¢ºÍ¸öÈËÐÅÏ¢£¨°üº¬£ºÉè±¸ÐÅÏ¢£¬¶ÁÐ´ÍâÖÃ´æ´¢Æ÷£¬Î»ÖÃÐÅÏ¢£©¡£</p>
-        </div>
-        <div class="subsection">
-            <p><strong>1.3 ËùÊÕ¼¯ÐÅÏ¢µÄÊ¹ÓÃ</strong></p>
-            <p>ÎÒÃÇÑÏ¸ñ×ñÊØ·¨ÂÉ·¨¹æµÄ¹æ¶¨ÒÔ¼°ÓëÓÃ»§µÄÔ¼¶¨£¬°´ÕÕ±¾Õþ²ßËùÊöÊ¹ÓÃÊÕ¼¯µÄÐÅÏ¢£¬ÒÔÏòÄúÌá¹©¸üÎªÓÅÖÊµÄ·þÎñ¡£</p>
-            <p>ÐÅÏ¢Ê¹ÓÃ¹æÔò£º</p>
-            <ul>
-                <li>ÎÒÃÇ»á¸ù¾ÝÎÒÃÇÊÕ¼¯µÄÐÅÏ¢ÏòÄúÌá¹©¸÷Ïî¹¦ÄÜÓë·þÎñ¡£</li>
-                <li>ÎÒÃÇ»á¸ù¾ÝÄúÊ¹ÓÃ²úÆ·µÄÆµÂÊºÍÇé¿ö¡¢¹ÊÕÏÐÅÏ¢¡¢ÐÔÄÜÐÅÏ¢·ÖÎöÎÒÃÇ²úÆ·µÄÔËÐÐÇé¿ö£¬ÒÔÈ·±£·þÎñµÄ°²È«ÐÔ£¬²¢ÓÅ»¯ÎÒÃÇµÄ²úÆ·£¬Ìá¸ßÎÒÃÇµÄ·þÎñÖÊÁ¿¡£</li>
-                <li>ÎÒÃÇ²»»á½«ÎÒÃÇ´æ´¢ÔÚ·ÖÎöÈí¼þÖÐµÄÐÅÏ¢ÓëÄúÌá¹©µÄ¸öÈËÉí·ÝÐÅÏ¢Ïà½áºÏ¡£</li>
-                <li>ÎªÁË¸üºÃµØÁË½âÄúÈçºÎ½ÓÈëºÍÊ¹ÓÃÎÒÃÇµÄ·þÎñ£¬ÎÒÃÇ¿ÉÄÜ»á½«Í¨¹ýÄ³Ò»Ïî·þÎñËùÊÕ¼¯µÄÐÅÏ¢£¬ÒÔ»ã¼¯ÐÅÏ¢µÄ·½Ê½£¬ÓÃÓÚÎÒÃÇµÄÆäËû·þÎñ¡£</li>
-                <li>ÎÒÃÇ¿ÉÄÜÔÚ±ØÒªÊ±£¨ÒòÏµÍ³Î¬»¤¶øÔÝÍ£Ä³Ò»Ïî·þÎñÊ±£©ÏòÄú·¢³öÓë·þÎñÓÐ¹ØµÄ¹«¸æ¡£</li>
-            </ul>
-        </div>
-        <div class="subsection">
-            <p><strong>1.4 ÉêÇëÊÚÈ¨µÄÈ¨ÏÞ¡¢Ä¿µÄ¼°ËùÉæ¸öÈËÐÅÏ¢</strong></p>
-            <table>
-                <tr>
-                    <th>È¨ÏÞ</th>
-                    <th>Ä¿µÄ</th>
-                    <th>ËùÉæ¸öÈËÐÅÏ¢</th>
-                </tr>
-                <tr>
-                    <td>Éè±¸ÐÅÏ¢</td>
-                    <td>±£ÕÏ·þÎñÕý³£ÔËÐÐ£¬ÌáÉýÕËºÅ°²È«ÐÔ</td>
-                    <td>°üÃû¡¢Éè±¸ID¡¢Éè±¸Ãû³Æ¡¢Éè±¸ÀàÐÍºÍ°æ±¾¡¢ÏµÍ³°æ±¾¡¢IPµØÖ·¡¢IMEI¡¢IMSI¡¢MACµØÖ·¡¢AndroidID¡¢OAID¡¢Ó¦ÓÃID¡¢Ó¦ÓÃÁÐ±í¡¢ÍøÂçÁ¬½Ó×´Ì¬</td>
-                </tr>
-                <tr>
-                    <td>´æ´¢È¨ÏÞ</td>
-                    <td>±£´æÓÎÏ·Êý¾Ý</td>
-                    <td>ÒÆ¶¯Éè±¸´æ´¢È¨ÏÞ</td>
-                </tr>
-                <tr>
-                    <td>µØÀíÎ»ÖÃÐÅÏ¢</td>
-                    <td>·á¸»ÓÎÏ·ÌåÑé</td>
-                    <td>µØÀíÎ»ÖÃÐÅÏ¢</td>
-                </tr>
-                <tr>
-                    <td>ÊµÃûÉí·ÝÐÅÏ¢</td>
-                    <td>·ûºÏ·¨ÂÉ·¨¹æÒªÇó</td>
-                    <td>ÊµÃûÉí·ÝÐÅÏ¢</td>
-                </tr>
-                <tr>
-                    <td>Ö§¸¶ÐÅÏ¢</td>
-                    <td>¹ºÂòÐéÄâ²úÆ·</td>
-                    <td>³äÖµ¼ÇÂ¼¡¢Ïû·Ñ¼ÇÂ¼</td>
-                </tr>
-                <tr>
-                    <td>SSIDºÍÀ¶ÑÀµØÖ·</td>
-                    <td>ÓÅ»¯ÓÎÏ·ÌåÑé</td>
-                    <td>SSID¡¢À¶ÑÀµØÖ·</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
-    <!-- ÈçºÎÊ¹ÓÃCookie»òÍ¬Àà¼¼Êõ -->
-    <div class="section">
-        <h2 id="cookie">¶þ¡¢ÈçºÎÊ¹ÓÃCookie»òÍ¬Àà¼¼Êõ</h2>
-        <p>ÎÒÃÇ»òÎÒÃÇºÏ×÷µÄµÚÈý·½Æ½Ì¨¿ÉÄÜ»áÊ¹ÓÃÏà¹Ø¼¼ÊõÏòÄúµÄÉè±¸·¢ËÍÒ»¸ö»ò¶à¸öCookie»òÄäÃû±êÊ¶·û£¬ÒÔÊÕ¼¯ºÍ´æ´¢Äú·ÃÎÊ¡¢Ê¹ÓÃ±¾ÓÎÏ·Ê±µÄÐÅÏ¢¡£ÎÒÃÇ³ÐÅµ£¬²»»á½«CookieÓÃÓÚ±¾ÒþË½Õþ²ßËùÊöÄ¿µÄÖ®ÍâµÄÈÎºÎÆäËûÓÃÍ¾¡£</p>
-    </div>
-
-    <!-- ÈçºÎ¹²Ïí¡¢×ªÈÃ¡¢ÅûÂ¶ÄúµÄ¸öÈËÐÅÏ¢ -->
-    <div class="section">
-        <h2 id="sharing">Èý¡¢ÈçºÎ¹²Ïí¡¢×ªÈÃ¡¢ÅûÂ¶ÄúµÄ¸öÈËÐÅÏ¢</h2>
-        <p>ÎÒÃÇ½«ÑÏ¸ñ×ñÊØÏà¹Ø·¨ÂÉ·¨¹æ£¬¶ÔÄúµÄ¸öÈËÐÅÏ¢ÓèÒÔ±£ÃÜ£¬²»»á½«ÄúµÄ¸öÈËÐÅÏ¢³öÊÛ¸øµÚÈý·½¡£ÎÒÃÇ½ö»áÔÚÒÔÏÂÇé¿öÏÂ£¬´¦ÓÚºÏ·¨¡¢Õýµ±¡¢±ØÒª¡¢ÌØ¶¨¡¢Ã÷È·µÄÄ¿µÄ£¬ÇÒ²ÉÈ¡·ûºÏÒµ½ç±ê×¼µÄ°²È«·À»¤´ëÊ©µÄÇ°ÌáÏÂ¹²Ïí¡¢×ªÈÃ¡¢ÅûÂ¶ÄúµÄ¸öÈËÊý¾Ý¡£</p>
-        <p>ÓÃÓÚ¹²Ïí¡¢×ªÈÃ¡¢ÅûÂ¶µÄ¸öÈËÐÅÏ¢ÊÇÈ¥±êÊ¶»¯´¦ÀíºóµÄÐÅÏ¢£¬ÇÒ¹²ÏíµÚÈý·½ÎÞ·¨ÖØÐÂÊ¶±ð´ËÀàÐÅÏ¢µÄ×ÔÈ»ÈËÖ÷Ìå¡£</p>
-        <table>
+    <h1>SDKä¿¡æ¯è¡¨</h1>
+    <table>
+        <thead>
             <tr>
-                <th>ÇéÐÎ</th>
-                <th>Ìõ¼þ</th>
+                <th>SDKåç§°</th>
+                <th>å¼€å‘è€…</th>
+                <th>ç”¨é€”</th>
+                <th>æ”¶é›†ä¸ªäººä¿¡æ¯ç±»åž‹åŠç›®çš„</th>
+                <th>é€‚ç”¨èŒƒå›´</th>
+                <th>SDKéšç§æ”¿ç­–é“¾æŽ¥</th>
             </tr>
+        </thead>
+        <tbody>
+            <!-- ç¤ºä¾‹è¡Œ -->
             <tr>
-                <td>¹²Ïí</td>
-                <td>ÊÂÏÈ»ñµÃÄúÃ÷È·µÄÍ¬Òâ»òÊÚÈ¨</td>
+                <td>ç¤ºä¾‹SDK</td>
+                <td>ç¤ºä¾‹å¼€å‘è€…</td>
+                <td>åŠŸèƒ½æè¿°</td>
+                <td>æ”¶é›†çš„ä¸ªäººä¿¡æ¯åŠç›®çš„</td>
+                <td>å…·ä½“é€‚ç”¨èŒƒå›´</td>
+                <td><a href="https://example.com/privacy">éšç§æ”¿ç­–é“¾æŽ¥</a></td>
             </tr>
-            <tr>
-                <td>×ªÈÃ</td>
-                <td>¸ù¾ÝÊÊÓÃµÄ·¨ÂÉ·¨¹æ¡¢·¨ÂÉ³ÌÐòµÄÒªÇó</td>
-            </tr>
-            <tr>
-                <td>¹«¿ªÅûÂ¶</td>
-                <td>¸ù¾ÝÄúµÄÐèÇó£¬ÔÚÄúÃ÷È·Í¬ÒâµÄÅûÂ¶·½Ê½ÏÂÅûÂ¶</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- ÈçºÎ´æ´¢ÄúµÄ¸öÈËÐÅÏ¢ -->
-    <div class="section">
-        <h2 id="storage">ËÄ¡¢ÈçºÎ´æ´¢ÄúµÄ¸öÈËÐÅÏ¢</h2>
-        <p>ÎÒÃÇ½öÔÚ±¾ÒþË½Õþ²ßËùÊöÄ¿µÄËù±ØÐèÆÚ¼äºÍ·¨ÂÉ·¨¹æÒªÇóµÄ×î¶ÌÊ±ÏÞÄÚ´¢´æÄúµÄ¸öÈËÐÅÏ¢¡£</p>
-        <p>ÎÒÃÇÔÚÖÐ»ªÈËÃñ¹²ºÍ¹ú¾³ÄÚÔËÓªÖÐÊÕ¼¯ºÍ²úÉúµÄ¸öÈËÐÅÏ¢£¬´¢´æÔÚÖÐ»ªÈËÃñ¹²ºÍ¹ú¾³ÄÚ£¬ÒÔÏÂÇéÐÎ³ýÍâ£º</p>
-        <ul>
-            <li>·¨ÂÉ·¨¹æÓÐÃ÷È·¹æ¶¨</li>
-            <li>»ñµÃÄúµÄÊÚÈ¨Í¬Òâ</li>
-        </ul>
-    </div>
-
-    <!-- ÈçºÎ±£»¤ÄúµÄ¸öÈËÐÅÏ¢ -->
-    <div class="section">
-        <h2 id="protection">Îå¡¢ÈçºÎ±£»¤ÄúµÄ¸öÈËÐÅÏ¢</h2>
-        <p>ÎÒÃÇ½«²ÉÓÃÑÏ¸ñµÄ°²È«ÖÆ¶ÈÒÔ¼°ÐÐÒµÍ¨ÐÐµÄ°²È«¼¼ÊõºÍ³ÌÐòÀ´È·±£ÄúµÄ¸öÈËÐÅÏ¢²»±»¶ªÊ§¡¢Ð¹Â¶¡¢»ÙËð»òÀÄÓÃ¡£</p>
-        <p>µ±ÄúµÄ¸öÈËÐÅÏ¢³öÏÖÐ¹Â¶¡¢Ëð»Ù»ò¶ªÊ§°²È«ÊÂ¼þÊ±£¬ÎÒÃÇ½«°´ÕÕ·¨ÂÉ·¨¹æµÄÒªÇó£¬¼°Ê±ÏòÄú¸æÖªÏà¹ØÇé¿ö¡£</p>
-    </div>
-
-    <!-- ÈçºÎ¹ÜÀíÄúµÄ¸öÈËÐÅÏ¢ -->
-    <div class="section">
-        <h2 id="management">Áù¡¢ÈçºÎ¹ÜÀíÄúµÄ¸öÈËÐÅÏ¢</h2>
-        <p>Äú¿ÉÒÔÍ¨¹ýÓÎÏ·ÄÚµÄÖ¸Òý£¬ÔÚÓÎÏ·ÄÚ»òÔÚÓÎÏ·ÖÐ½ÓÈëµÄµÚÈý·½·þÎñÖÐ·ÃÎÊ¡¢¸üÐÂºÍÉ¾³ýÄúµÄ¸öÈËÐÅÏ¢¡£</p>
-    </div>
-
-    <!-- Î´³ÉÄêÈËÊ¹ÓÃÌõ¿î -->
-    <div class="section">
-        <h2 id="minor">Æß¡¢Î´³ÉÄêÈËÊ¹ÓÃÌõ¿î</h2>
-        <p>ÈôÄúÊÇÎ´Âú18ÖÜËêµÄÎ´³ÉÄêÈË£¬ÔÚÊ¹ÓÃÎÒÃÇµÄÓÎÏ·¼°Ïà¹Ø·þÎñÇ°£¬Ó¦ÔÚÄúµÄ¸¸Ä¸»òÆäËû¼à»¤ÈË¼à»¤¡¢Ö¸µ¼ÏÂ¹²Í¬ÔÄ¶Á²¢Í¬Òâ±¾ÒþË½Õþ²ß¡£</p>
-        <p>ÎÒÃÇ¸ù¾Ý¹ú¼ÒÏà¹Ø·¨ÂÉ·¨¹æµÄ¹æ¶¨±£»¤Î´³ÉÄêÈËµÄ¸öÈËÐÅÏ¢£¬Ö»»áÔÚ·¨ÂÉÔÊÐí¡¢¸¸Ä¸»òÆäËû¼à»¤ÈËÃ÷È·Í¬Òâ»ò±£»¤Î´³ÉÄêÈËËù±ØÒªµÄÇé¿öÏÂÊÕ¼¯¡¢Ê¹ÓÃ¡¢´¢´æ¡¢¹²Ïí¡¢×ªÈÃ»òÅûÂ¶Î´³ÉÄêÈËµÄ¸öÈËÐÅÏ¢¡£</p>
-          <p>ÈôÄúÊÇÎ´³ÉÄêÈËµÄ¼à»¤ÈË£¬µ±Äú¶ÔÄúËù¼à»¤µÄÎ´³ÉÄêÈËµÄ¸öÈËÐÅÏ¢ÓÐÏà¹ØÒÉÎÊÊ±£¬ÇëÍ¨¹ý¹«Ë¾±¾ÒþË½Õþ²ß¹«Ê¾µÄÁªÏµ·½Ê½ÓëÎÒÃÇÁªÏµ¡£</p>
-    </div>
-
-    <!-- ÒþË½Õþ²ßµÄÐÞ¶©ºÍÍ¨Öª -->
-    <div class="section">
-        <h2 id="revision">°Ë¡¢ÒþË½Õþ²ßµÄÐÞ¶©ºÍÍ¨Öª</h2>
-        <p>ÎªÁË¸øÄúÌá¹©¸üºÃµÄ·þÎñ£¬ÎÒÃÇµÄÓÎÏ·¼°Ïà¹Ø·þÎñ½«²»Ê±¸üÐÂÓë±ä»¯£¬ÎÒÃÇ»áÊÊÊ±¶Ô±¾ÒþË½Õþ²ß½øÐÐÐÞ¶©¡£</p>
-        <p>±¾ÒþË½Õþ²ß¸üÐÂºó£¬ÈçÎÒÃÇµÄÓÎÏ·°æ±¾¸üÐÂÇÒÉæ¼°ÒþË½Õþ²ß¸üÐÂµÄ£¬ÎÒÃÇ»áÔÚ¸üÐÂºóµÄÌõ¿îÉúÐ§Ç°Í¨¹ýÊÊµ±µÄ·½Ê½ÌáÐÑÄú¸üÐÂµÄÄÚÈÝ£¬ÒÔ±ãÄú¼°Ê±ÁË½â±¾ÒþË½Õþ²ßµÄ×îÐÂ°æ±¾¡£ÈôÄú¼ÌÐøÊ¹ÓÃÎÒÃÇµÄ·þÎñ£¬¼´±íÊ¾Í¬Òâ½ÓÊÜÐÞ¶©ºóµÄ±¾ÒþË½Õþ²ß²¢ÊÜÖ®Ô¼Êø¡£</p>
-    </div>
-
-    <!-- ÈçºÎÁªÏµÎÒÃÇ -->
-    <div class="section">
-        <h2 id="contact">¾Å¡¢ÈçºÎÁªÏµÎÒÃÇ</h2>
-        <p>Èç¹ûÄú¶Ô±¾ÒþË½Õþ²ßÓÐÈÎºÎÒÉÎÊ£¬¿ÉÒÔÍ¨¹ýÒÔÏÂ·½Ê½ÁªÏµÎÒÃÇ£¬ÎÒÃÇºËÊµ²¢ÑéÖ¤ÄúµÄÓÃ»§Éí·ÝºóµÄÊ®Îå¸ö¹¤×÷ÈÕÄÚÓèÒÔ»Ø¸´¡£</p>
-        <p class="contact-info">ÓÊÏä£ºyourle0126@outlook.com</p>
-    </div>
-
-    <!-- °æÈ¨ÐÅÏ¢ -->
-    <div class="section">
-        <p>·¢²¼ÈÕÆÚ: 2025-02-06</p>
-        <p>¸üÐÂÈÕÆÚ: 2024-11-09</p>
-        <p>ÉúÐ§ÈÕÆÚ: 2025-02-06</p>
-    </div>
+            <!-- ä½ å¯ä»¥æ ¹æ®éœ€è¦ç»§ç»­æ·»åŠ æ›´å¤šè¡Œ -->
+        </tbody>
+    </table>
 </body>
 </html>
