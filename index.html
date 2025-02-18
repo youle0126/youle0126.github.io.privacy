@@ -1,24 +1,28 @@
-根据你提供的SDK信息，我将其整理成一个HTML表格，方便查看和使用。以下是完整的HTML代码：
-HTML复制
 <!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDK信息表</title>
+    <title>隐私政策</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 1000px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             color: #333;
         }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 10px;
         }
         th, td {
             border: 1px solid #ddd;
@@ -29,236 +33,306 @@ HTML复制
             background-color: #f4f4f4;
             font-weight: bold;
         }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
+        a {
+            color: #3498db;
+            text-decoration: none;
         }
-        tr:hover {
-            background-color: #f1f1f1;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>SDK信息表</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>SDK名称</th>
-                <th>开发者</th>
-                <th>用途</th>
-                <th>收集个人信息类型及目的</th>
-                <th>适用范围</th>
-                <th>SDK隐私政策链接</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- TalkingData统计 -->
-            <tr>
-                <td>TalkingData统计</td>
-                <td>北京腾云天下科技有限公司</td>
-                <td>App数据分析</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>所有渠道</td>
-                <td><a href="https://www.talkingdata.com/privacy.jsp?languagetype=zh_cn">隐私政策</a></td>
-            </tr>
-            <!-- AppsFlyer统计 -->
-            <tr>
-                <td>AppsFlyer统计</td>
-                <td>AppsFlyer</td>
-                <td>App数据分析</td>
-                <td>访问网络连接，可能产生GPRS流量</td>
-                <td>所有渠道</td>
-                <td><a href="https://www.appsflyer.com/cn/product/security-and-privacy/">隐私政策</a></td>
-            </tr>
-            <!-- 友盟+移动统计SDK -->
-            <tr>
-                <td>友盟+移动统计SDK</td>
-                <td>友盟同欣（北京）科技有限公司</td>
-                <td>App数据分析</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>所有渠道</td>
-                <td><a href="https://www.umeng.com/page/policy">隐私政策</a></td>
-            </tr>
-            <!-- 字节跳动SDK -->
-            <tr>
-                <td>字节跳动SDK</td>
-                <td>北京字节跳动科技有限公司</td>
-                <td>App数据分析</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>所有渠道</td>
-                <td><a href="https://privacy.bytedance.com/zh/policy">隐私政策</a></td>
-            </tr>
-            <!-- Bugly Android -->
-            <tr>
-                <td>Bugly Android</td>
-                <td>深圳市腾讯计算机系统有限公司</td>
-                <td>收集app的崩溃和异常信息</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>所有渠道</td>
-                <td><a href="https://privacy.qq.com/document/preview/fc748b3d96224fdb825ea79e132c1a56">隐私政策</a></td>
-            </tr>
-            <!-- 广点通 DMP行为数据统计 -->
-            <tr>
-                <td>广点通 DMP行为数据统计</td>
-                <td>深圳市腾讯计算机系统有限公司</td>
-                <td>统计用户激活运营数据</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>所有渠道</td>
-                <td><a href="https://www.tencent.com/zh-cn/privacy-policy.html">隐私政策</a></td>
-            </tr>
-            <!-- 巨量引擎数据统计 -->
-            <tr>
-                <td>巨量引擎数据统计</td>
-                <td>北京巨量引擎网络技术有限公司</td>
-                <td>统计用户激活运营数据</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>所有渠道</td>
-                <td><a href="https://open.oceanengine.com/labels/7/docs/1708428054592516">隐私政策</a></td>
-            </tr>
-            <!-- 穿山甲广告SDK -->
-            <tr>
-                <td>穿山甲广告SDK</td>
-                <td>北京巨量引擎网络技术有限公司</td>
-                <td>在APP中投放广告</td>
-                <td>获取设备信息：设备IMEI/IMSI/MAC/androidID/IP地址/SUPI/SUCI/软件安装列表，用于辅助用户设备识别</td>
-                <td>所有渠道</td>
-                <td><a href="https://www.csjplatform.com/privacy">隐私政策</a></td>
-            </tr>
-            <!-- 优量汇 Android SDK -->
-            <tr>
-                <td>优量汇 Android SDK</td>
-                <td>深圳市腾讯计算机系统有限公司</td>
-                <td>在APP中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC/设备ip/传感器列表/OAID/ICCID/IMSI/VAID/MAC地址/SSID/BSSID，用于辅助用户设备识别</td>
-                <td>所有渠道</td>
-                <td><a href="https://e.qq.com/dev/help_detail.html?cid=2005&pid=5983">隐私政策</a></td>
-            </tr>
-            <!-- OPPO联盟广告SDK -->
-            <tr>
-                <td>OPPO联盟广告SDK</td>
-                <td>广东欢太科技有限公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/imei/androidId/mac地址/软件安装列表，用于辅助用户设备识别</td>
-                <td>OPPO渠道包</td>
-                <td><a href="https://u.oppomobile.com/main/privacy.html">隐私政策</a></td>
-            </tr>
-            <!-- 游戏联运SDK -->
-            <tr>
-                <td>游戏联运SDK</td>
-                <td>广东欢太科技有限公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/imei/androidId/mac地址/软件安装列表，用于辅助用户设备识别</td>
-                <td>OPPO渠道包</td>
-                <td><a href="https://ie-activity-cn.heytapimage.com/ie-activity/staticActivity/kpmYVr/htmls/kpmYVr.html?bizType=ie&actId=10001811&c=0">隐私政策</a></td>
-            </tr>
-            <!-- OPPO PUSH 客户端SDK -->
-            <tr>
-                <td>OPPO PUSH 客户端SDK</td>
-                <td>广东欢太科技有限公司</td>
-                <td>在App使用推送功能</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>OPPO渠道包</td>
-                <td><a href="https://open.oppomobile.com/new/developmentDoc/info?id=11228">隐私政策</a></td>
-            </tr>
-            <!-- 欢太账号授权SDK -->
-            <tr>
-                <td>欢太账号授权SDK</td>
-                <td>广东欢太科技有限公司</td>
-                <td>在App使用账号授权功能</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>OPPO渠道包</td>
-                <td><a href="https://muc.heytap.com/agreement/privacy-policy/account/auth-sdk/mainland/main/index.html?language=zh-CN">隐私政策</a></td>
-            </tr>
-            <!-- VIVO联盟SDK -->
-            <tr>
-                <td>VIVO联盟SDK</td>
-                <td>维沃移动通信有限公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC/OAID/ICCID/IMSI/VAID/MAC地址/SSID/BSSID,用于辅助用户设备识别</td>
-                <td>VIVO渠道包</td>
-                <td><a href="https://www.vivo.com.cn/about-vivo/privacy-policy">隐私政策</a></td>
-            </tr>
-            <!-- 快手联盟（Android） -->
-            <tr>
-                <td>快手联盟（Android）</td>
-                <td>北京快手科技有限公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC/OAID/ICCID/IMSI/VAID/MAC地址/SSID/BSSID/传感器列表/SUPI/SUCI/软件安装列表,用于辅助用户设备识别</td>
-                <td>所有渠道</td>
-                <td><a href="https://u.kuaishou.com/home/help/detail/1337/1425">隐私政策</a></td>
-            </tr>
-            <!-- 华为联运SDK和广告SDK -->
-            <tr>
-                <td>华为联运SDK和广告SDK</td>
-                <td>华为技术有限公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC/加速度传感器，用于辅助用户设备识别</td>
-                <td>华为渠道包</td>
-                <td><a href="https://www.huawei.com/cn/privacy-policy">隐私政策</a></td>
-            </tr>
-            <!-- 荣耀联运SDK和广告SDK -->
-            <tr>
-                <td>荣耀联运SDK和广告SDK</td>
-                <td>荣耀终端股份有限公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC/加速度传感器/IMSI/软件安装列表/OAID，用于辅助用户设备识别</td>
-                <td>荣耀渠道包</td>
-                <td><a href="https://www.honor.com/cn/privacy/privacy-policy/">隐私政策</a></td>
-            </tr>
-            <!-- 小米联运SDK和广告SDK -->
-            <tr>
-                <td>小米联运SDK和广告SDK                 
-                <td>小米科技有限责任公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>小米渠道包</td>
-                <td><a href="https://privacy.mi.com/all/zh_CN/">隐私政策</a></td>
-            </tr>
-            <!-- 4399联运SDK、广告SDK和计费SDK -->
-            <tr>
-                <td>4399联运SDK、广告SDK和计费SDK</td>
-                <td>四三九九网络股份有限公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>4399渠道包</td>
-                <td><a href="http://web.4399.com/local/a612571.html">隐私政策</a></td>
-            </tr>
-            <!-- 魅族联运SDK和广告SDK -->
-            <tr>
-                <td>魅族联运SDK和广告SDK</td>
-                <td>珠海星纪魅族信息技术有限公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>魅族渠道包</td>
-                <td><a href="https://i.flyme.cn/privacy">隐私政策</a></td>
-            </tr>
-            <!-- 腾讯联运SDK和广告SDK -->
-            <tr>
-                <td>腾讯联运SDK和广告SDK</td>
-                <td>深圳市腾讯计算机系统有限公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>腾讯渠道包</td>
-                <td><a href="https://www.tencent.com/zh-cn/privacy-policy.html">隐私政策</a></td>
-            </tr>
-            <!-- 联想应用商店联运SDK -->
-            <tr>
-                <td>联想应用商店联运SDK</td>
-                <td>联想集团</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>联想渠道包</td>
-                <td><a href="https://www.lenovo.com.cn/public/cookies.html">隐私政策</a></td>
-            </tr>
-            <!-- 金立联运SDK和广告SDK -->
-            <tr>
-                <td>金立联运SDK和广告SDK</td>
-                <td>深圳市金立通信设备有限公司</td>
-                <td>在App中投放广告</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>金立渠道包</td>
+    <h1>隐私政策</h1>
+    <div class="section">
+        <h2>一、如何收集和使用您的个人信息</h2>
+        <p>个人信息是指以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的各种信息。</p>
+        <h3>1.1 您主动提供的信息</h3>
+        <p>当您注册账号时，您可以通过QQ、微信或其他第三方平台账号创建游戏账户，并登录我们的游戏，届时您将向我们提供您的第三方平台账户头像、昵称信息；当您直接进入游戏时，是以游客的身份快速进入游戏。</p>
+        <h3>1.2 我们或我们合作的第三方平台收集和使用的信息及获取的权限</h3>
+        <p>为了给您提供更好的产品或服务，我们在游戏内接入了第三方服务（包括但不限于实名认证、数据分析、第三方支付、投放广告），当您使用我们的产品或服务时，为了确保您能正常使用游戏，我们和我们合作的第三方平台可能在游戏安装和使用过程中通过调用设备权限收集部分设备相关信息和个人信息（包含：设备信息，读写外置存储器，位置信息）。</p>
+        <h3>1.3 所收集信息的使用</h3>
+        <p>我们会按照如下规则使用收集的信息：我们会根据我们收集的信息向您提供各项功能与服务，包括基础游戏功能、玩家互动功能、消费功能；我们会根据您使用产品的频率和信息使用规则情况、故障信息、性能信息分析我们产品的运行情况，以确保服务的安全性，并优化我们的产品，提高我们的服务质量。</p>
+        <h3>1.4 申请授权的权限、目的及所涉个人信息</h3>
+        <p>为更好的为您提供服务，保障程序正常、安全运行，我们将向您申请以下权限。以下权限的申请方式包括但不限于：弹窗提示、界面提示。同一权限在不同终端设备上的获取方式可能有所不同，具体以您使用的终端设备实际采用方式为准。向您申请的部分权限由我们的合作厂商SDK获取。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>权限</th>
+                    <th>目的</th>
+                    <th>所涉个人信息</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>设备信息</td>
+                    <td>保障您正常使用我们的产品或服务，实现游戏数据的统计和分析以及提升设备账号的安全性</td>
+                    <td>包名、设备ID、设备名称、设备类型、系统版本、IP地址、IMEI、IMSI、MAC、AndroidID、OAID、SSID、设备序列号、设备名称、设备类型和版本、系统版本、IP地址、IMEI、IMSI、MAC、AndroidID、OAID</td>
+                </tr>
+                <tr>
+                    <td>存储权限</td>
+                    <td>保障您能充分使用游戏的各项功能和保存玩家游戏数据</td>
+                    <td>移动设备的存储权限</td>
+                </tr>
+                <tr>
+                    <td>地理位置信息</td>
+                    <td>丰富游戏体验，实现内容多样性</td>
+                    <td>地理位置信息</td>
+                </tr>
+                <tr>
+                    <td>实名身份信息</td>
+                    <td>符合相关法律法规政策及相关主管部门的要求，进行实名认证</td>
+                    <td>实名身份信息</td>
+                </tr>
+                <tr>
+                    <td>支付信息</td>
+                    <td>获取支付相关的交易信息</td>
+                    <td>充值记录、消费记录</td>
+                </tr>
+                <tr>
+                    <td>SSID</td>
+                    <td>优化游戏体验</td>
+                    <td>SSID信息</td>
+                </tr>
+                <tr>
+                    <td>蓝牙地址</td>
+                    <td>数据统计分析，优化游戏体验</td>
+                    <td>蓝牙地址</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="section">
+        <h2>二、如何使用Cookie或同类技术</h2>
+        <p>Cookie或同类技术是互联网中普遍使用的技术。当您体验、登录、使用我们的游戏时，我们或我们合作的第三方平台可能会使用相关技术向您的设备发送一个或多个Cookie或匿名标识符，以收集和存储您访问、使用本游戏时的信息。我们承诺，不会将Cookie用于本隐私政策所述目的之外的任何其他用途。</p>
+    </div>
+    <div class="section">
+        <h2>三、如何共享、转让、披露您的个人信息</h2>
+        <p>我们将严格遵守相关法律法规，对您的个人信息予以保密，不会将您的个人信息出售给第三方。我们仅会在以下情况下，处于合法、正当、必要、特定、明确的目的，且采取符合业界标准的安全防护措施的前提下共享、转让、披露您的个人数据。</p>
+    </div>
+    <div class="section">
+        <h2>四、如何存储您的个人信息</h2>
+        <p>我们仅在本隐私政策所述目的所必需期间和法律法规要求的最短时限内储存您的个人信息。如我们终止服务或运营，我们及我们合作的第三方平台将及时停止继续收集您个人信息的活动，同时会遵守相关法律法规要求提前向您通知，并在终止服务或运营后对您的个人信息进行删除或匿名化处理，但法律法规或监管部门另有规定的除外。</p>
+    </div>
+    <div class="section">
+        <h2>五、如何保护您的个人信息</h2>
+        <p>我们将采用严格的安全制度以及行业通行的安全技术和程序来确保您的个人信息不被丢失、泄露、毁损或滥用。</p>
+    </div>
+    <div class="section">
+        <h2>六、如何管理您的个人信息</h2>
+        <p>我们非常重视您对个人信息管理的权利。您可根据我们游戏内的指引，在游戏内或在游戏中接入的第三方服务中访问、更新和删除您的个人信息。在访问、更新和删除前述信息时，我们可能会要求您进行身份验证，以保障信息安全。</p>
+    </div>
+    <div class="section">
+        <h2>七、未成年人使用条款</h2>
+        <p>若您是未满18周岁的未成年人，在使用我们的游戏及相关服务前，应在您的父母或其他监护人监护、指导下共同阅读并同意本隐私政策。</p>
+    </div>
+    <div class="section">
+        <h2>八、隐私政策的修订和通知</h2>
+        <p>为了给您提供更好的服务，我们的游戏及相关服务将不时更新与变化，我们会适时对本隐私政策进行修订，这些修订构成本隐私政策的一部分并具有同于本隐私政策的效力，未经您明确同意，我们不会削减您依据当前生效的本隐私政策所应享受的权利，亦不会获取您未授权的权限。</p>
+    </div>
+    <div class="section">
+        <h2>九、如何联系我们</h2>
+        <p>您在使用我们游戏的过程中，如果对本隐私政策有任何的疑义或建议，或您认为您的个人信息没有得到本隐私政策的保护，您可以通过以下方式联系我们，我们核实并验证您的用户身份后的十五个工作日内予以回复。</p>
+        <p>邮箱：yourle0126@outlook.com</p>
+    </div>
+    <div class="section">
+        <h2>第三方平台SDK主要获取的权限以及对应的用途</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>SDK名称</th>
+                    <th>开发者</th>
+                    <th>用途</th>
+                    <th>收集个人信息类型及目的</th>
+                    <th>适用范围</th>
+                    <th>SDK隐私政策链接</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TalkingData统计</td>
+                    <td>北京腾云天下科技有限公司</td>
+                    <td>App数据分析</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>所有渠道</td>
+                    <td><a href="https://www.talkingdata.com/privacy.jsp?languagetype=zh_cn">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>AppsFlyer统计</td>
+                    <td>AppsFlyer</td>
+                    <td>App数据分析</td>
+                    <td>访问网络连接，可能产生GPRS流量</td>
+                    <td>所有渠道</td>
+                    <td><a href="https://www.appsflyer.com/cn/product/security-and-privacy/">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>友盟+移动统计SDK</td>
+                    <td>友盟同欣（北京）科技有限公司</td>
+                    <td>App数据分析</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>所有渠道</td>
+                    <td><a href="https://www.umeng.com/page/policy">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>字节跳动SDK</td>
+                    <td>北京字节跳动科技有限公司</td>
+                    <td>App数据分析</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>所有渠道</td>
+                    <td><a href="https://privacy.bytedance.com/zh/policy">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>Bugly Android</td>
+                    <td>深圳市腾讯计算机系统有限公司</td>
+                    <td>收集app的崩溃和异常信息</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>所有渠道</td>
+                    <td><a href="https://privacy.qq.com/document/preview/fc748b3d96224fdb825ea79e132c1a56">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>广点通 DMP行为数据统计</td>
+                    <td>深圳市腾讯计算机系统有限公司</td>
+                    <td>统计用户激活运营数据</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>所有渠道</td>
+                    <td><a href="https://www.tencent.com/zh-cn/privacy-policy.html">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>巨量引擎数据统计</td>
+                    <td>北京巨量引擎网络技术有限公司</td>
+                    <td>统计用户激活运营数据</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>所有渠道</td>
+                    <td><a href="https://open.oceanengine.com/labels/7/docs/1708428054592516">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>穿山甲广告SDK</td>
+                    <td>北京巨量引擎网络技术有限公司</td>
+                    <td>在APP中投放广告</td>
+                    <td>获取设备信息：设备IMEI/IMSI/MAC/androidID/IP地址/SUPI/SUCI/软件安装列表，用于辅助用户设备识别</td>
+                    <td>所有渠道</td>
+                    <td><a href="https://www.csjplatform.com/privacy">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>优量汇 Android SDK</td>
+                    <td>深圳市腾讯计算机系统有限公司</td>
+                    <td>在APP中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC/设备ip/传感器列表/OAID/ICCID/IMSI/VAID/MAC地址/SSID/BSSID，用于辅助用户设备识别</td>
+                    <td>所有渠道</td>
+                    <td><a href="https://e.qq.com/dev/help_detail.html?cid=2005&pid=5983">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>OPPO联盟广告SDK</td>
+                    <td>广东欢太科技有限公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/imei/androidId/mac地址/软件安装列表，用于辅助用户设备识别</td>
+                    <td>OPPO渠道包</td>
+                    <td><a href="https://u.oppomobile.com/main/privacy.html">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>游戏联运SDK</td>
+                    <td>广东欢太科技有限公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/imei/androidId/mac地址/软件安装列表，用于辅助用户设备识别</td>
+                    <td>OPPO渠道包</td>
+                    <td><a href="https://ie-activity-cn.heytapimage.com/ie-activity/staticActivity/kpmYVr/htmls/kpmYVr.html?bizType=ie&actId=10001811&c=0">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>OPPO PUSH 客户端SDK</td>
+                    <td>广东欢太科技有限公司</td>
+                    <td>在App使用推送功能</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>OPPO渠道包</td>
+                    <td><a href="https://open.oppomobile.com/new/developmentDoc/info?id=11228">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>欢太账号授权SDK</td>
+                    <td>广东欢太科技有限公司</td>
+                    <td>在App使用账号授权功能</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>OPPO渠道包</td>
+                    <td><a href="https://muc.heytap.com/agreement/privacy-policy/account/auth-sdk/mainland/main/index.html?language=zh-CN">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>VIVO联盟SDK</td>
+                    <td>维沃移动通信有限公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC/OAID/ICCID/IMSI/VAID/MAC地址/SSID/BSSID,用于辅助用户设备识别</td>
+                    <td>VIVO渠道包</td>
+                    <td><a href="https://www.vivo.com.cn/about-vivo/privacy-policy">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>快手联盟（Android）</td>
+                    <td>北京快手科技有限公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC/OAID/ICCID/IMSI/VAID/MAC地址/SSID/BSSID/传感器列表/SUPI/SUCI/软件安装列表,用于辅助用户设备识别</td>
+                    <td>所有渠道</td>
+                    <td><a href="https://u.kuaishou.com/home/help/detail/1337/1425">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>华为联运SDK和广告SDK</td>
+                    <td>华为技术有限公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC/加速度传感器，用于辅助用户设备识别</td>
+                    <td>华为渠道包</td>
+                    <td><a href="https://www.huawei.com/cn/privacy-policy">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>荣耀联运SDK和广告SDK</td>
+                    <td>荣耀终端股份有限公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC/加速度传感器/IMSI/软件安装列表/OAID，用于辅助用户设备识别</td>
+                    <td>荣耀渠道包</td>
+                    <td><a href="https://www.honor.com/cn/privacy/privacy-policy/">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>小米联运SDK和广告SDK</td>
+                    <td>小米科技有限责任公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>小米渠道包</td>
+                    <td><a href="https://privacy.mi.com/all/zh_CN/">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>4399联运SDK、广告SDK和计费SDK</td>
+                    <td>四三九九网络股份有限公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>4399渠道包</td>
+                    <td><a href="http://web.4399.com/local/a612571.html">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>魅族联运SDK和广告SDK</td>
+                    <td>珠海星纪魅族信息技术有限公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>魅族渠道包</td>
+                    <td><a href="https://i.flyme.cn/privacy">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>腾讯联运SDK和广告SDK</td>
+                    <td>深圳市腾讯计算机系统有限公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>腾讯渠道包</td>
+                    <td><a href="https://www.tencent.com/zh-cn/privacy-policy.html">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>联想应用商店联运SDK</td>
+                    <td>联想集团</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>联想渠道包</td>
+                    <td><a href="https://www.lenovo.com.cn/public/cookies.html">隐私政策</a></td>
+                </tr>
+                <tr>
+                    <td>金立联运SDK和广告SDK</td>
+                    <td>深圳市金立通信设备有限公司</td>
+                    <td>在App中投放广告</td>
+                    <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
+                    <td>金立渠道包</td>
                 <td><a href="http://devquickapp.gionee.com/help/page/id/4.html">隐私政策</a></td>
             </tr>
-            <!-- 360联运SDK -->
             <tr>
                 <td>360联运SDK</td>
                 <td>北京奇虎科技有限公司</td>
@@ -267,7 +341,6 @@ HTML复制
                 <td>360渠道包</td>
                 <td><a href="https://i.360.cn/reg/privacy/">隐私政策</a></td>
             </tr>
-            <!-- 百度渠道联运SDK和广告SDK -->
             <tr>
                 <td>百度渠道联运SDK和广告SDK</td>
                 <td>百度在线网络技术(北京)有限公司</td>
@@ -276,7 +349,6 @@ HTML复制
                 <td>百度渠道包</td>
                 <td><a href="http://privacy.baidu.com/detail?id=288">隐私政策</a></td>
             </tr>
-            <!-- UC渠道联运SDK和广告SDK -->
             <tr>
                 <td>UC渠道联运SDK和广告SDK</td>
                 <td>阿里巴巴集团控股有限公司</td>
@@ -285,7 +357,6 @@ HTML复制
                 <td>UC渠道包</td>
                 <td><a href="https://www.uc.cn/about/privacy/">隐私政策</a></td>
             </tr>
-            <!-- 拼多多SDK -->
             <tr>
                 <td>拼多多SDK</td>
                 <td>上海寻梦信息技术有限公司</td>
@@ -294,7 +365,6 @@ HTML复制
                 <td>所有渠道</td>
                 <td><a href="https://www.pinduoduo.com/pdd_privacy_policy.pdf">隐私政策</a></td>
             </tr>
-            <!-- 微信SDK -->
             <tr>
                 <td>微信SDK</td>
                 <td>深圳市腾讯计算机系统有限公司</td>
@@ -303,7 +373,6 @@ HTML复制
                 <td>所有渠道</td>
                 <td><a href="https://pay.weixin.qq.com/wiki/doc/apiv3/wxpay/pages/index.shtml">隐私政策</a></td>
             </tr>
-            <!-- 微信支付SDK -->
             <tr>
                 <td>微信支付SDK</td>
                 <td>深圳市腾讯计算机系统有限公司</td>
@@ -312,43 +381,35 @@ HTML复制
                 <td>所有渠道</td>
                 <td><a href="https://pay.weixin.qq.com/wiki/doc/apiv3/wxpay/pages/index.shtml">隐私政策</a></td>
             </tr>
-            <!-- 支付宝支付 -->
             <tr>
-                <td>支付宝支付</td>
+                <td>支付宝支付SDK</td>
                 <td>支付宝（中国）网络技术有限公司</td>
                 <td>使用支付功能</td>
                 <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
                 <td>所有渠道</td>
                 <td><a href="https://open.alipay.com/platform/home.htm">隐私政策</a></td>
             </tr>
-            <!-- 应用宝支付 -->
             <tr>
-                <td>应用宝支付</td>
+                <td>应用宝支付SDK</td>
                 <td>深圳市腾讯计算机系统有限公司</td>
                 <td>使用支付功能</td>
                 <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
                 <td>所有渠道</td>
                 <td><a href="https://wiki.open.qq.com/index.php?title=YSDK%E4%B8%8B%E8%BD%BD">隐私政策</a></td>
             </tr>
-            <!-- 银联支付sdk -->
             <tr>
-                <td>银联支付sdk</td>
+                <td>银联支付SDK</td>
                 <td>中国银联</td>
                 <td>使用支付功能</td>
                 <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
                 <td>所有渠道</td>
                 <td><a href="https://open.unionpay.com/">隐私政策</a></td>
             </tr>
-            <!-- 其他SDK -->
-            <tr>
-                <td>其他SDK</td>
-                <td>其他开发者</td>
-                <td>App数据获取</td>
-                <td>获取设备信息：设备序列号/IMEI/Android ID/MAC，用于辅助用户设备识别</td>
-                <td>所有渠道</td>
-                <td>具体隐私政策需参考各SDK开发者提供的文档</td>
-            </tr>
         </tbody>
     </table>
+    </div>
+    <p>发布日期：2025-02-06</p>
+    <p>更新日期：2024-11-09</p>
+    <p>生效日期：2025-02-06</p>
 </body>
 </html>
